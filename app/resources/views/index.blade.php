@@ -33,7 +33,7 @@
               <h5 class='text-grey-darkest lg:text-xl' style="font-family: 'Nunito', sans-serif; font-weight:normal">no special equipment needed &mdash; <span class='text-red'>just your phone</span></h5>
             </div>
             <div class='flex justify-center lg:mt-12'>
-              <a href='' class='btn lg:text-2xl lg:w-1/4'><i class="fas fa-location-arrow"></i>&nbsp;DRIVE</a>
+              <a href='' class='btn lg:text-2xl lg:w-1/5'><i class="fas fa-location-arrow"></i>&nbsp;drive</a>
             </div>
           </div>
         </div>
