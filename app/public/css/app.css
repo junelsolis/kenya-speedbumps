@@ -5752,6 +5752,10 @@ table {
   font-size: 3rem;
 }
 
+.text-6xl {
+  font-size: 6rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -6157,6 +6161,7 @@ a {
   border-radius: 9999px;
   background-color: #b00;
   color: #fff;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -11357,6 +11362,10 @@ a {
 
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 6rem;
   }
 
   .sm\:italic {
@@ -16933,6 +16942,10 @@ a {
     font-size: 3rem;
   }
 
+  .md\:text-6xl {
+    font-size: 6rem;
+  }
+
   .md\:italic {
     font-style: italic;
   }
@@ -22507,6 +22520,10 @@ a {
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 6rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -28079,6 +28096,10 @@ a {
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 6rem;
   }
 
   .xl\:italic {
