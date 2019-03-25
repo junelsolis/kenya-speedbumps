@@ -17,6 +17,7 @@ class CreateBumpsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('track_id');
             $table->point('location');
+            $table->decimal('elevation',7,2);
             $table->timestamps();
 
             $table->foreign('track_id')->references('id')->on('tracks');
