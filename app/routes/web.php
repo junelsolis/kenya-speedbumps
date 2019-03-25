@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'ViewController@index');
+Route::get('/coverage', 'ViewController@coverage');

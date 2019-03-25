@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Oswald:700" rel="stylesheet">
+    @include('header-tags')
     <title>Kenya Speed Bumps</title>
     <style>
       .main {
@@ -62,7 +59,7 @@
 
           <div class='flex justify-center mt-16'>
             <ul class='list-reset text-center flex flex-col leading-loose lg:flex-row lg:items-center'>
-              <li class='border-grey-darkest border-2 w-1/2 mx-auto lg:mx-0 lg:w-auto lg:px-3 lg:py-1'><a href=''>Coverage Map</a></li>
+              <li class='border-grey-darkest border-2 w-1/2 mx-auto lg:mx-0 lg:w-auto lg:px-3 lg:py-1'><a href='/coverage'>Coverage Map</a></li>
               <li class='lg:ml-16'><a href=''>How to Use</a></li>
               <li class='lg:ml-16'><a href=''>Contributing</a></li>
               <li class='lg:ml-16'><a href=''>About</a></li>
