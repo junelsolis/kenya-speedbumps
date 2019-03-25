@@ -31,7 +31,7 @@ services:
     container_name: ke-sb-db
     restart: always
     volumes:
-      - ke-sb-db-vol:/var/lib/mysql
+      - db-vol:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
       MYSQL_DATABASE: speedbumps
@@ -55,4 +55,4 @@ secrets:
      file: ./secrets/db_root_password
 
 volumes:
-  ke-sb-db-vol:
+  db-vol:
