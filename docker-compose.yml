@@ -1,0 +1,58 @@
+version: '3.6'
+
+services:
+
+
+  web:
+    image: nginx
+    container_name: ke-sb-nginx
+    restart: always
+    volumes:
+      - "./app:/var/www/html"
+      - "./nginx:/etc/nginx/"
+    ports:
+      - "127.0.0.1:9600:80"
+
+
+  php:
+    image: php:7.2-fpm
+    container_name: ke-sb-php
+    # build:
+    #   context: ./
+    #   dockerfile: php.dockerfile
+    volumes:
+      - "./app:/var/www/html"
+
+
+
+
+  mariadb:
+    image: mariadb
+    container_name: ke-sb-db
+    restart: always
+    volumes:
+      - ke-sb-db-vol:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+      MYSQL_DATABASE: speedbumps
+    ports:
+      - "127.0.0.1:3306:3306"
+    secrets:
+      - db_root_password
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: ke-sb-pma
+    restart: always
+    environment:
+      - PMA_HOST=ke-sb-db
+    ports:
+      - "127.0.0.1:9601:80"
+
+
+secrets:
+   db_root_password:
+     file: ./secrets/db_root_password
+
+volumes:
+  ke-sb-db-vol:
